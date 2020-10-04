@@ -1,0 +1,18 @@
+#include "pm_std.h"
+#include "math.h"
+#include "pm_std.h"
+double sm_core_canonicalAngle(double sm_Flz54uVsi__UbP_LLGOB06);double
+sm_VtGSifZt_uGQZHL0HujoLl(double sm_k2YW1d8jJI4zZH1tKJFKPV,double
+sm_ktvnnQE_5n0DXXEqVLWCD3);double sm_core_canonicalAngle(double
+sm__AExROh1PVWNeP7hmMWuJv){const double sm_FAgKZ8DJk6pig9GuHdUp8H=pmf_get_pi()
+;const double sm_kn2XwHZfIMKAd92Buf9DSH=2.0*sm_FAgKZ8DJk6pig9GuHdUp8H;if(
+sm__AExROh1PVWNeP7hmMWuJv>=0.0)return fmod(sm_FAgKZ8DJk6pig9GuHdUp8H+
+sm__AExROh1PVWNeP7hmMWuJv,sm_kn2XwHZfIMKAd92Buf9DSH)-sm_FAgKZ8DJk6pig9GuHdUp8H
+;else{const double sm_FmI56rPhzzKAX5Ej10Sy5Z=sm_FAgKZ8DJk6pig9GuHdUp8H-fmod(
+sm_FAgKZ8DJk6pig9GuHdUp8H-sm__AExROh1PVWNeP7hmMWuJv,sm_kn2XwHZfIMKAd92Buf9DSH)
+;return(sm_FmI56rPhzzKAX5Ej10Sy5Z<sm_FAgKZ8DJk6pig9GuHdUp8H)?
+sm_FmI56rPhzzKAX5Ej10Sy5Z:-sm_FAgKZ8DJk6pig9GuHdUp8H;}}double
+sm_VtGSifZt_uGQZHL0HujoLl(double sm_k2YW1d8jJI4zZH1tKJFKPV,double
+sm_ktvnnQE_5n0DXXEqVLWCD3){const double sm_kEw8RhbAZIGdfeViKpSqbH=
+sm_core_canonicalAngle(sm_ktvnnQE_5n0DXXEqVLWCD3-sm_k2YW1d8jJI4zZH1tKJFKPV);
+return sm_k2YW1d8jJI4zZH1tKJFKPV+sm_kEw8RhbAZIGdfeViKpSqbH;}
