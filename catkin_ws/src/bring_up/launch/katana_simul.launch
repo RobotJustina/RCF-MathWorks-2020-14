@@ -1,0 +1,27 @@
+<launch>
+  <arg name="lambda" default="60.0"/>
+  <arg name="alpha"  default="42.0"/>
+  <arg name="gamma"  default="0.0001"/>
+  
+  <param name="/smo/lambda" value="$(arg lambda)"/>
+  <param name="/smo/alpha"  value="$(arg alpha)" />
+  <param name="/smo/gamma"  value="$(arg gamma)" />
+  <param name="/control/P1" value="1.0"/>
+  <param name="/control/P2" value="1.0"/>
+  <param name="/control/P3" value="1.0"/>
+  <param name="/control/P4" value="1.0"/>
+  <param name="/control/P5" value="1.0"/>
+  <param name="/control/P6" value="1.0"/>
+  <param name="/control/P7" value="1.0"/>
+  
+  <param name="robot_description" command="xacro --inorder '$(find katana_description)/urdf/katana_300_6m180.urdf.xacro'" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find bring_up)/rviz/katana_simul.rviz"/>
+  <node name="joint_publisher" pkg="simple_gui" type="katana_joint_publisher.py"  output="screen"/>
+  <node name="trajectories" pkg="trajectory_gen" type="trajectory_gen.py" output="screen"/>
+  <node name="simple_gui" pkg="simple_gui" type="simple_gui" output="screen"/>
+
+  <node name="manipulator"  pkg="katana_manipulator" type="katana_manipulator_node"/>
+
+  
+</launch>
