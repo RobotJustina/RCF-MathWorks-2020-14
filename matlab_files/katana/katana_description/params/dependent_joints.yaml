@@ -1,3 +1,0 @@
-dependent_joints:
-  katana_l_finger_joint: {parent: katana_r_finger_joint, factor: 1 }
-

@@ -1,8 +1,10 @@
 Online mass estimation for the Katana manipulator
 
-NOTE: Before running simulation file download the katana robot manipulator description for here:
+NOTE: Before running simulation file download the 'katana_description' folder from this repository:
 
- - <insert link to katana description download>
+ - https://github.com/uos/katana_driver
+
+And save it into this folder.
 
 Files contained in this folder:
 
