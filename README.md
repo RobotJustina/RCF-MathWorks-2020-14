@@ -3,6 +3,8 @@ Deliverables of the project "Object Recognition by Physical Properties Detection
 
 This project is developed in the context of the Robocup@Home competition. We propose to estimate the mass of a grasped object using fault reconstruction techniques. Considering the weight of the object as a disturbance causing a faulty behavior, such weight can be estimated using an Sliding Mode Observer. The estimation of the grasped object mass can be used to improve manipulation tasks when visual information is not enough to correctly identify an object (e.g., an empty and a full can). The overall system was designed and tested using Simulink Toolboxes and this repository contains the files and instructions to reproduce the results obtained using two different manipulators: Katana (https://github.com/uos/katana_driver) and Justina's left arm (a robot developed in the Biorobotics Laboratory, UNAM https://biorobotics.fi-p.unam.mx/). For technical details, please refer to http://arxiv.org/abs/2010.06116.
 
+[![View Mass Estimation for Manipulators using Sliding Mode Observer on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/81543-mass-estimation-for-manipulators-using-sliding-mode-observer)
+
 ## Requirements
 * Matlab 2020a (Required toolbox: ROS, Control and Simscape)
 * ROS Melodic
